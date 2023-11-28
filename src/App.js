@@ -858,10 +858,7 @@ function App(props) {
                     ranking={fifaRankData}
                     overall_mean={overallMeanData}
                   />
-                  {/* <div className="div_right_top_right"> */}
-                  {/* <NationAbilityTopChart nation_index={0} /> */}
                   <TopChart nationality_name={nations[0]} data={dataset} />
-                  {/* </div> */}
                 </div>
 
                 <div className='div_right_bottom'>
