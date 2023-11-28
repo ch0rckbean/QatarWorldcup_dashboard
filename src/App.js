@@ -7,19 +7,14 @@ import logo from './imgs/logo.png';
 import './style.css';
 import * as d3 from 'd3';
 
-// import input_data from "./data/value.csv";
 import dataset_csv from './data/dataset.csv';
 import mapping_csv from './data/nations-mapping.csv';
 import overall_mean_csv from './data/overall-mean.csv';
 import fifa_rank_csv from './data/FIFA_Ranking.csv';
 
-// import TopPlayerFace from "./nation_ability/TopPlayerFace";
 import TopPlayerRadar from './nation_ability/TopPlayerRadar';
-// import NationInfo from "./nation_ability/NationInfo";
 import Wrapper from './Wrapper';
 import TopFlag from './nation_ability/TopFlag';
-// import TopChart from "./nation-ability/TopChart";
-
 import TopPlayerInfo from './nation_ability/TopPlayerInfo';
 import CompareChart from './nation_ability/CompareChart';
 
