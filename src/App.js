@@ -236,11 +236,9 @@ function App(props) {
 
     return (
       <>
-        {/* <div className='div_right_top_bar'> */}
         <svg ref={svgRef} height='500px' width='630px' viewBox='0 0 390 400'>
           <g className='y-axis'></g>
         </svg>
-        {/* </div> */}
       </>
     );
   }
