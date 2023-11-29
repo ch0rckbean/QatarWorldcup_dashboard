@@ -245,6 +245,255 @@ function App(props) {
     );
   }
 
+  // 국가 리스트
+  const nationListA = [
+    {
+      className: 'group_infoA1',
+      evtParam: 'Qatar',
+      id: 'A1',
+      src: flag,
+      value: '카타르',
+    },
+    {
+      className: 'group_infoA2',
+      evtParam: 'Ecuador',
+      id: 'A2',
+      src: 'https://cdn.sofifa.net/flags/ec.png',
+      value: '에콰도르',
+    },
+    {
+      className: 'group_infoA3',
+      evtParam: 'Senegal',
+      id: 'A3',
+      src: 'https://cdn.sofifa.net/flags/sn.png',
+      value: '세네갈',
+    },
+    {
+      className: 'group_infoA4',
+      evtParam: 'Netherlands',
+      id: 'A4',
+      src: 'https://cdn.sofifa.net/flags/sn.png',
+      value: '네덜란드',
+    },
+  ];
+
+  const nationListB = [
+    {
+      className: 'group_infoB1',
+      evtParam: 'England',
+      id: 'B1',
+      src: 'https://cdn.sofifa.net/flags/gb-eng.png',
+      value: '잉글랜드',
+    },
+    {
+      className: 'group_infoB2',
+      evtParam: 'Iran',
+      id: 'B2',
+      src: 'https://cdn.sofifa.net/flags/ir.png',
+      value: '이란',
+    },
+    {
+      className: 'group_infoB3',
+      evtParam: 'United States',
+      id: 'B3',
+      src: 'https://cdn.sofifa.net/flags/us.png',
+      value: '미국',
+    },
+    {
+      className: 'group_infoB4',
+      evtParam: 'Wales',
+      id: 'B4',
+      src: 'https://cdn.sofifa.net/flags/gb-wls.png',
+      value: '웨일스',
+    },
+  ];
+
+  const nationListC = [
+    {
+      className: 'group_infoC1',
+      evtParam: 'Argentina',
+      id: 'C1',
+      src: 'https://cdn.sofifa.net/flags/ar.png',
+      value: '아르헨티나',
+    },
+    {
+      className: 'group_infoC2',
+      evtParam: 'Saudi Arabia',
+      id: 'C2',
+      src: 'https://cdn.sofifa.net/flags/sa.png',
+      value: '사우디아라비아',
+    },
+    {
+      className: 'group_infoC3',
+      evtParam: 'Mexico',
+      id: 'C3',
+      src: 'https://cdn.sofifa.net/flags/mx.png',
+      value: '멕시코',
+    },
+    {
+      className: 'group_infoC4',
+      evtParam: 'Poland',
+      id: 'C4',
+      src: 'https://cdn.sofifa.net/flags/pl.png',
+      value: '폴란드',
+    },
+  ];
+
+  const nationListD = [
+    {
+      className: 'group_infoD1',
+      evtParam: 'rance',
+      id: 'D1',
+      src: 'https://cdn.sofifa.net/flags/fr.png',
+      value: '프랑스',
+    },
+    {
+      className: 'group_infoD2',
+      evtParam: 'Australia',
+      id: 'D2',
+      src: 'https://cdn.sofifa.net/flags/au.png',
+      value: '호주',
+    },
+    {
+      className: 'group_infoD3',
+      evtParam: 'Denmark',
+      id: 'D3',
+      src: 'https://cdn.sofifa.net/flags/dk.png',
+      value: '덴마크',
+    },
+    {
+      className: 'group_infoD4',
+      evtParam: 'Tunisia',
+      id: 'D4',
+      src: 'https://cdn.sofifa.net/flags/tn.png',
+      value: '튀니지',
+    },
+  ];
+
+  const nationListE = [
+    {
+      className: 'group_infoE1',
+      evtParam: 'Spain',
+      id: 'E1',
+      src: 'https://cdn.sofifa.net/flags/es.png',
+      value: '스페인',
+    },
+    {
+      className: 'group_infoE2',
+      evtParam: 'Costa Rica',
+      id: 'E2',
+      src: 'https://cdn.sofifa.net/flags/cr.png',
+      value: '코스타리카',
+    },
+    {
+      className: 'group_infoE3',
+      evtParam: 'Germany',
+      id: 'E3',
+      src: 'https://cdn.sofifa.net/flags/de.png',
+      value: '독일',
+    },
+    {
+      className: 'group_infoE4',
+      evtParam: 'apan',
+      id: 'E4',
+      src: 'https://cdn.sofifa.net/flags/jp.png',
+      value: '일본',
+    },
+  ];
+
+  const nationListF = [
+    {
+      className: 'group_infoF1',
+      evtParam: 'Belgium',
+      id: 'F1',
+      src: 'https://cdn.sofifa.net/flags/be.png',
+      value: '벨기에',
+    },
+    {
+      className: 'group_infoF2',
+      evtParam: 'Canada',
+      id: 'F2',
+      src: 'https://cdn.sofifa.net/flags/ca.png',
+      value: '캐나다',
+    },
+    {
+      className: 'group_infoF3',
+      evtParam: 'Morocco',
+      id: 'F3',
+      src: 'https://cdn.sofifa.net/flags/ma.png',
+      value: '모로코',
+    },
+    {
+      className: 'group_infoF4',
+      evtParam: 'Croatia',
+      id: 'F4',
+      src: 'https://cdn.sofifa.net/flags/hr.png',
+      value: '크로아티아',
+    },
+  ];
+
+  const nationListG = [
+    {
+      className: 'group_infoG1',
+      evtParam: 'Brazil',
+      id: 'G1',
+      src: 'https://cdn.sofifa.net/flags/br.png',
+      value: '브라질',
+    },
+    {
+      className: 'group_infoG2',
+      evtParam: 'Serbia',
+      id: 'G2',
+      src: 'https://cdn.sofifa.net/flags/rs.png',
+      value: '세르비아',
+    },
+    {
+      className: 'group_infoG3',
+      evtParam: 'Switzerland',
+      id: 'G3',
+      src: 'https://cdn.sofifa.net/flags/ch.png',
+      value: '스위스',
+    },
+    {
+      className: 'group_infoG4',
+      evtParam: 'Cameroon',
+      id: 'G4',
+      src: 'https://cdn.sofifa.net/flags/cm.png',
+      value: '카메룬',
+    },
+  ];
+
+  const nationListH = [
+    {
+      className: 'group_infoH1',
+      evtParam: 'Portugal',
+      id: 'H1',
+      src: 'https://cdn.sofifa.net/flags/pt.png',
+      value: '포르투갈',
+    },
+    {
+      className: 'group_infoH2',
+      evtParam: 'Gana',
+      id: 'H2',
+      src: 'https://cdn.sofifa.net/flags/gh.png',
+      value: '가나',
+    },
+    {
+      className: 'group_infoH3',
+      evtParam: 'Uruguay',
+      id: 'H3',
+      src: 'https://cdn.sofifa.net/flags/uy.png',
+      value: '우르과이',
+    },
+    {
+      className: 'group_infoH4',
+      evtParam: 'Korea Republic',
+      id: 'H4',
+      src: 'https://cdn.sofifa.net/flags/kr.png',
+      value: '대한민국',
+    },
+  ];
+
   return (
     <>
       {/* LAYOUT */}
@@ -263,65 +512,21 @@ function App(props) {
                   <h3 id='group1'>그룹A</h3>
                 </b>
                 <div className='group_infos'>
-                  <div className='group_infoA1'>
-                    <button
-                      onClick={() => onClickNations('Qatar')}
-                      id='A1'
-                      value='카타르'
-                      name='Group'
-                    >
-                      <img width='30%' src={flag} alt='국가 사진' />
-                      <p>카타르</p>
-                    </button>
-                  </div>
-
-                  <div className='group_infoA2'>
-                    <button
-                      onClick={() => onClickNations('Ecuador')}
-                      id='A2'
-                      value='에콰도르'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/ec.png'
-                        alt='국가 사진'
-                      />
-                      <p>에콰도르</p>
-                    </button>
-                  </div>
-                  <div className='group_infoA3'>
-                    <button
-                      onClick={() => onClickNations('Senegal')}
-                      type='button'
-                      id='A3'
-                      value='세네갈'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/sn.png'
-                        alt='국가 사진'
-                      />
-                      <p>세네갈</p>
-                    </button>
-                  </div>
-                  <div className='group_infoA4'>
-                    <button
-                      onClick={() => onClickNations('Netherlands')}
-                      type='button'
-                      id='A4'
-                      value='네덜란드'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/nl.png'
-                        alt='국가 사진'
-                      />
-                      <p>네덜란드</p>
-                    </button>
-                  </div>
+                  {nationListA.map((nationA) => {
+                    return (
+                      <div className={nationA.className} key={nationA.id}>
+                        <button
+                          onClick={() => onClickNations(nationA.evtParam)}
+                          id={nationA.id}
+                          value={nationA.value}
+                          name='Group'
+                        >
+                          <img width='30%' src={nationA.src} alt='국가 사진' />
+                          <p>{nationA.value}</p>
+                        </button>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -330,69 +535,21 @@ function App(props) {
                   <h3 id='group2'>그룹B</h3>
                 </b>
                 <div className='group_infos'>
-                  <div className='group_infoB1'>
-                    <button
-                      onClick={() => onClickNations('England')}
-                      id='B1'
-                      value='잉글랜드'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/gb-eng.png'
-                        alt='국가 사진'
-                      />
-                      <p>잉글랜드</p>
-                    </button>
-                  </div>
-                  <div className='group_infoB2'>
-                    <button
-                      onClick={() => onClickNations('Iran')}
-                      id='B2'
-                      value='이란'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/ir.png'
-                        alt='국가 사진'
-                      />
-                      <p>이란</p>
-                    </button>
-                  </div>
-
-                  <div className='group_infoB3'>
-                    <button
-                      onClick={() => onClickNations('United States')}
-                      type='button'
-                      id='B3'
-                      value='미국'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/us.png'
-                        alt='국가 사진'
-                      />
-                      <p>미국</p>
-                    </button>
-                  </div>
-                  <div className='group_infoB4'>
-                    <button
-                      onClick={() => onClickNations('Wales')}
-                      type='button'
-                      id='B4'
-                      value='웨일스'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/gb-wls.png'
-                        alt='국가 사진'
-                      />
-                      <p>웨일스</p>
-                    </button>
-                  </div>
+                  {nationListB.map((nationB) => {
+                    return (
+                      <div className={nationB.className} key={nationB.id}>
+                        <button
+                          onClick={() => onClickNations(nationB.evtParam)}
+                          id={nationB.id}
+                          value={nationB.value}
+                          name='Group'
+                        >
+                          <img width='30%' src={nationB.src} alt='국가 사진' />
+                          <p>{nationB.value}</p>
+                        </button>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -403,70 +560,21 @@ function App(props) {
                   <h3 id='group3'>그룹C</h3>
                 </b>
                 <div className='group_infos'>
-                  <div className='group_infoC1'>
-                    <button
-                      onClick={() => onClickNations('Argentina')}
-                      type='button'
-                      id='C1'
-                      value='아르헨티나'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/ar.png'
-                        alt='국가 사진'
-                      />
-                      <p>아르헨티나</p>
-                    </button>
-                  </div>
-                  <div className='group_infoC2'>
-                    <button
-                      onClick={() => onClickNations('Saudi Arabia')}
-                      type='button'
-                      id='C2'
-                      value='사우디아라비아'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/sa.png'
-                        alt='국가 사진'
-                      />
-                      <p>사우디아라비아</p>
-                    </button>
-                  </div>
-                  <div className='group_infoC3'>
-                    <button
-                      onClick={() => onClickNations('Mexico')}
-                      type='button'
-                      id='C3'
-                      value='멕시코'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/mx.png'
-                        alt='국가 사진'
-                      />
-                      <p>멕시코</p>
-                    </button>
-                  </div>
-                  <div className='group_infoC4'>
-                    <button
-                      onClick={() => onClickNations('Poland')}
-                      type='button'
-                      id='C4'
-                      value='폴란드'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/pl.png'
-                        alt='국가 사진'
-                      />
-                      <p>폴란드</p>
-                    </button>
-                  </div>
+                  {nationListC.map((nationC) => {
+                    return (
+                      <div className={nationC.className} key={nationC.id}>
+                        <button
+                          onClick={() => onClickNations(nationC.evtParam)}
+                          id={nationC.id}
+                          value={nationC.value}
+                          name='Group'
+                        >
+                          <img width='30%' src={nationC.src} alt='국가 사진' />
+                          <p>{nationC.value}</p>
+                        </button>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -475,70 +583,21 @@ function App(props) {
                   <h3 id='group4'>그룹D</h3>
                 </b>
                 <div className='group_infos'>
-                  <div className='group_infoD1'>
-                    <button
-                      onClick={() => onClickNations('France')}
-                      type='button'
-                      id='D1'
-                      value='프랑스'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/fr.png'
-                        alt='국가 사진'
-                      />
-                      <p>프랑스</p>
-                    </button>
-                  </div>
-                  <div className='group_infoD2'>
-                    <button
-                      onClick={() => onClickNations('Australia')}
-                      type='button'
-                      id='D2'
-                      value='호주'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/au.png'
-                        alt='국가 사진'
-                      />
-                      <p>호주</p>
-                    </button>
-                  </div>
-                  <div className='group_infoD3'>
-                    <button
-                      onClick={() => onClickNations('Denmark')}
-                      type='button'
-                      id='D3'
-                      value='덴마크'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/dk.png'
-                        alt='국가 사진'
-                      />
-                      <p>덴마크</p>
-                    </button>
-                  </div>
-                  <div className='group_infoD4'>
-                    <button
-                      onClick={() => onClickNations('Tunisia')}
-                      type='button'
-                      id='D4'
-                      value='튀니지'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/tn.png'
-                        alt='국가 사진'
-                      />
-                      <p>튀니지</p>
-                    </button>
-                  </div>
+                  {nationListD.map((nationD) => {
+                    return (
+                      <div className={nationD.className} key={nationD.id}>
+                        <button
+                          onClick={() => onClickNations(nationD.evtParam)}
+                          id={nationD.id}
+                          value={nationD.value}
+                          name='Group'
+                        >
+                          <img width='30%' src={nationD.src} alt='국가 사진' />
+                          <p>{nationD.value}</p>
+                        </button>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -549,70 +608,21 @@ function App(props) {
                   <h3 id='group5'>그룹E</h3>
                 </b>
                 <div className='group_infos'>
-                  <div className='group_infoE1'>
-                    <button
-                      onClick={() => onClickNations('Spain')}
-                      type='button'
-                      id='E1'
-                      value='스페인'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/es.png'
-                        alt='국가 사진'
-                      />
-                      <p>스페인</p>
-                    </button>
-                  </div>
-                  <div className='group_infoE2'>
-                    <button
-                      onClick={() => onClickNations('Costa Rica')}
-                      type='button'
-                      id='E2'
-                      value='코스타리카'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/cr.png'
-                        alt='국가 사진'
-                      />
-                      <p>코스타리카</p>
-                    </button>
-                  </div>
-                  <div className='group_infoE3'>
-                    <button
-                      onClick={() => onClickNations('Germany')}
-                      type='button'
-                      id='E3'
-                      value='독일'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/de.png'
-                        alt='국가 사진'
-                      />
-                      <p>독일</p>
-                    </button>
-                  </div>
-                  <div className='group_infoE4'>
-                    <button
-                      onClick={() => onClickNations('Japan')}
-                      type='button'
-                      id='E4'
-                      value='일본'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/jp.png'
-                        alt='국가 사진'
-                      />
-                      <p>일본</p>
-                    </button>
-                  </div>
+                  {nationListE.map((nationE) => {
+                    return (
+                      <div className={nationE.className} key={nationE.id}>
+                        <button
+                          onClick={() => onClickNations(nationE.evtParam)}
+                          id={nationE.id}
+                          value={nationE.value}
+                          name='Group'
+                        >
+                          <img width='30%' src={nationE.src} alt='국가 사진' />
+                          <p>{nationE.value}</p>
+                        </button>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -621,70 +631,21 @@ function App(props) {
                   <h3 id='group6'>그룹F</h3>
                 </b>
                 <div className='group_infos'>
-                  <div className='group_infoF1'>
-                    <button
-                      onClick={() => onClickNations('Belgium')}
-                      type='button'
-                      id='F1'
-                      value='벨기에'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/be.png'
-                        alt='국가 사진'
-                      />
-                      <p>벨기에</p>
-                    </button>
-                  </div>
-                  <div className='group_infoF2'>
-                    <button
-                      onClick={() => onClickNations('Canada')}
-                      type='button'
-                      id='F2'
-                      value='캐나다'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/ca.png'
-                        alt='국가 사진'
-                      />
-                      <p>캐나다</p>
-                    </button>
-                  </div>
-                  <div className='group_infoF3'>
-                    <button
-                      onClick={() => onClickNations('Morocco')}
-                      type='button'
-                      id='F3'
-                      value='모로코'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/ma.png'
-                        alt='국가 사진'
-                      />
-                      <p>모로코</p>
-                    </button>
-                  </div>
-                  <div className='group_infoF4'>
-                    <button
-                      onClick={() => onClickNations('Croatia')}
-                      type='button'
-                      id='F4'
-                      value='크로아티아'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/hr.png'
-                        alt='국가 사진'
-                      />
-                      <p>크로아티아</p>
-                    </button>
-                  </div>
+                  {nationListF.map((nationF) => {
+                    return (
+                      <div className={nationF.className} key={nationF.id}>
+                        <button
+                          onClick={() => onClickNations(nationF.evtParam)}
+                          id={nationF.id}
+                          value={nationF.value}
+                          name='Group'
+                        >
+                          <img width='30%' src={nationF.src} alt='국가 사진' />
+                          <p>{nationF.value}</p>
+                        </button>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -695,71 +656,21 @@ function App(props) {
                   <h3 id='group7'>그룹G</h3>
                 </b>
                 <div className='group_infos'>
-                  <div className='group_infoG1'>
-                    <button
-                      onClick={() => onClickNations('Brazil')}
-                      type='button'
-                      id='G1'
-                      value='브라질'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/br.png'
-                        alt='국가 사진'
-                      />
-                      <p>브라질</p>
-                    </button>
-                  </div>
-                  <div className='group_infoG2'>
-                    <button
-                      onClick={() => onClickNations('Serbia')}
-                      type='button'
-                      id='G2'
-                      value='세르비아'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/rs.png'
-                        alt='국가 사진'
-                      />
-                      <p>세르비아</p>
-                    </button>
-                  </div>
-                  <div className='group_infoG3'>
-                    <button
-                      onClick={() => onClickNations('Switzerland')}
-                      type='button'
-                      id='G3'
-                      value='스위스'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/ch.png'
-                        alt='국가 사진'
-                      />
-                      <p>스위스</p>
-                    </button>
-                  </div>
-
-                  <div className='group_infoG4'>
-                    <button
-                      onClick={() => onClickNations('Cameroon')}
-                      type='button'
-                      id='G4'
-                      value='카메룬'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/cm.png'
-                        alt='국가 사진'
-                      />
-                      <p>카메룬</p>
-                    </button>
-                  </div>
+                  {nationListG.map((nationG) => {
+                    return (
+                      <div className={nationG.className} key={nationG.id}>
+                        <button
+                          onClick={() => onClickNations(nationG.evtParam)}
+                          id={nationG.id}
+                          value={nationG.value}
+                          name='Group'
+                        >
+                          <img width='30%' src={nationG.src} alt='국가 사진' />
+                          <p>{nationG.value}</p>
+                        </button>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -768,70 +679,21 @@ function App(props) {
                   <h3 id='group8'>그룹H</h3>
                 </b>
                 <div className='group_infos'>
-                  <div className='group_infoH1'>
-                    <button
-                      onClick={() => onClickNations('Portugal')}
-                      type='button'
-                      id='H1'
-                      value='포르투갈'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/pt.png'
-                        alt='국가 사진'
-                      />
-                      <p>포르투갈</p>
-                    </button>
-                  </div>
-                  <div className='group_infoH2'>
-                    <button
-                      onClick={() => onClickNations('Gana')}
-                      type='button'
-                      id='H2'
-                      value='가나'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/gh.png'
-                        alt='국가 사진'
-                      />
-                      <p>가나</p>
-                    </button>
-                  </div>
-                  <div className='group_infoH3'>
-                    <button
-                      onClick={() => onClickNations('Uruguay')}
-                      type='button'
-                      id='H3'
-                      value='우르과이'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/uy.png'
-                        alt='국가 사진'
-                      />
-                      <p>우르과이</p>
-                    </button>
-                  </div>
-                  <div className='group_infoH4'>
-                    <button
-                      onClick={() => onClickNations('Korea Republic')}
-                      type='button'
-                      id='H4'
-                      value='한국'
-                      name='Group'
-                    >
-                      <img
-                        width='30%'
-                        src='https://cdn.sofifa.net/flags/kr.png'
-                        alt='국가 사진'
-                      />
-                      <p>대한민국</p>
-                    </button>
-                  </div>
+                  {nationListH.map((nationH) => {
+                    return (
+                      <div className={nationH.className} key={nationH.id}>
+                        <button
+                          onClick={() => onClickNations(nationH.evtParam)}
+                          id={nationH.id}
+                          value={nationH.value}
+                          name='Group'
+                        >
+                          <img width='30%' src={nationH.src} alt='국가 사진' />
+                          <p>{nationH.value}</p>
+                        </button>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
