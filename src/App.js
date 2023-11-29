@@ -498,7 +498,6 @@ function App(props) {
       <Wrapper>
         <div className='LEFT'>
           <div className='left_up'>
-            {/* <p>{nations}</p> */}
             <img width='100%' src={logo} alt='logo_img' id='logoImg'></img>
           </div>{' '}
           {/*left_up*/}

@@ -114,8 +114,6 @@ function CompareChart(props) {
       .style('text-anchor', 'middle')
       .style('margin', '24px')
       .attr('class', 'tooltip');
-    // .style("fill", "white")
-    // .style("board", "2px")
   }, []);
 
   if (props.data === null) return <></>;
